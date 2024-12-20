@@ -9,6 +9,27 @@ body {
     width: 100%;
 }
 
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1C4A2A;
+    font-size: 30px;
+    font-weight: thin;
+    text-decoration: underline;
+    text-decoration-color: #1C4A2A;
+    text-decoration-thickness: 4px;
+    animation: underline-animation 3s infinite;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .wrap {
     display: flex;
     max-height: 300px;
@@ -290,7 +311,6 @@ body {
 
 /*#endregion */
 
-
 /*#region buttons*/
 .btn-border {
     font-size: 17px;
@@ -439,7 +459,7 @@ body {
     --m: 0.4;
     margin-left: 20px;
     margin-right: 20px;
-    background: #008c9e;
+    background: #1C4A2A;
     --R: calc(var(--s)*sqrt(var(--m)*var(--m) + 1) + var(--b)/2);
     height: calc(2*var(--R));
     --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
@@ -448,11 +468,18 @@ body {
         radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)), var(--_g)) 50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
 }
 
+input[type="text"],
+input[type="email"], 
+input[type="tel"], 
+input[type="password"], 
+input[type="date"],
+input[type="number"] {
+    color: #1C4A2A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
 
-
-
-/* animation */
-
+/*#region animation */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -464,3 +491,56 @@ body {
         transform: translateY(0);
     }
 }
+
+@keyframes underline-animation {
+    0% {
+        text-decoration-color: transparent;
+
+    }
+
+    50% {
+        text-decoration-color: #1C4A2A;
+    }
+
+    100% {
+        text-decoration-color: transparent;
+    }
+}
+/*#endregion  */
+
+/*#region Tabel  */
+.care-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.care-table th,
+.care-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.care-table th {
+    background-color: #1C4A2A;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.care-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.care-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.care-table td {
+    color: #555;
+}
+
+/*#endregion  */
