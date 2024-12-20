@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--#region Nav Bar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand mx-auto d-flex align-items-center" href="#">
+                <img src="assets/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                <span>Fluffy Friends</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Center Navigation Links -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Adopt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Care Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <!-- End Buttons -->
+                <div class="d-flex">
+                    <a class="btn btn-fill me-2" href="pages/signIn.html" role="button">Sign In</a>
+                    <a class="btn btn-border" href="pages/signUp.html" role="button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--#endregion -->
+
+    <!--#region header img and text  -->
+    <div class="wrap">
+        <div class="textbox">
+            <h1 class="title">Every Pet Deserves a Loving Home. Adopt a Pet Today</h1>
+            <p>Browse our available animals and learn more about the adoption process. Together, we can rescue,
+                rehabilitate, and rehome pets in need. Thank you for supporting our mission to bring joy to families
+                through pet adoption.</p>
+        </div>
+
+        <div class="imagebox">
+            <img src="assets/pet.png" width="100%" height="auto" />
+        </div>
+    </div>
+    <!--#endregion -->
+
+    <!--#region Card Search  -->
+    <div class="card">
+        <h2>Find your new Best friend</h2>
+        <div class="card-content">
+            <div class="dropdown-container">
+                <label for="pet-choice">Pet type</label>
+                <select id="pet-choice">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="bird">Bird</option>
+                </select>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="breed">Breed</label>
+                <select id="breed">
+                    <option value="all">All</option>
+                </select>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="age">Age</label>
+                <select id="age">
+                    <option value="all">All</option>
+                    <option value="baby">Baby</option>
+                    <option value="young">Young</option>
+                    <option value="adult">Adult</option>
+                    <option value="senior">Senior</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <label for="gender">gender</label>
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">male</option>
+                </select>
+            </div>
+            <div class="search">
+                <button class="btn-search"> Search </button>
+            </div>
+        </div>
+    </div>
+    <!--#endregion  -->
+
+    <!--#region Friend Fit  -->
+    <div class="fit-section">
+        <div class="images-pets">
+            <div class="img-grid">
+                <img src="assets/img1.png" alt="Pet 1">
+                <img src="assets/img2.png" alt="Pet 2">
+                <img src="assets/img3.png" alt="Pet 3">
+                <img src="assets/img4.png" alt="Pet 4">
+            </div>
+        </div>
+
+        <div class="fit-section-text">
+            <h1 class="title">Find Out Which Furry Friend Fits You Best!</h1>
+            <p>Take a stroll through our furry family and uncover the ideal companion that perfectly matches your
+                lifestyle and personality. Whether you're seeking a playful pal for outdoor adventures or a cuddly
+                companion for cozy nights in, our diverse selection of pets awaits your discovery.</p>
+            <div class="end-content">
+                <button class="btn-border">Explore More<i class="fa fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--#endregion  -->
+
+    <div class="wavy-line"></div>
+
+    <!--#region GIF -->
+    <div class="content-row">
+        <div class="gif-section">
+            <img src="assets/dog.gif" alt="Adorable Pet" class="gif-image" />
+        </div>
+        <div>
+            <h3>Looking for a good time?</h3>
+            <p> Now is the time to open your heart and home to an animal in need. We all want to be rescued, adopt a dog
+                today</p>
+        </div>
+    </div>
+    <!--#endregion  -->
+    
+    <div class="wavy-line"></div>
+
+    <!--#region Pet News  -->
+    <div class="news-section">
+        <h3>Pet News</h3>
+        <div class="card-container">
+
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="https://i.etsystatic.com/8073388/r/il/8e53f8/806908565/il_1588xN.806908565_lyd0.jpg"
+                        alt="">
+                </div>
+                <h1>Heading</h1>
+                <p>Lorem ipsum</p>
+            </div>
+
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="https://media.istockphoto.com/id/183412466/photo/eastern-bluebirds-male-and-female.jpg?s=612x612&w=0&k=20&c=6_EQHnGedwdjM9QTUF2c1ce7cC3XtlxvMPpU5HAouhc="
+                        alt="">
+                </div>
+                <h1>Heading</h1>
+                <p>Lorem ipsum</p>
+            </div>
+
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="https://media.istockphoto.com/id/964611070/photo/funny-burrowing-owl-athene-cunicularia.jpg?s=612x612&w=0&k=20&c=H1uU0nYj-vUB13lWo19LQeZ7ToMty_fVjR3LD87xqaE="
+                        alt="">
+                </div>
+                <h1>Heading</h1>
+                <p>Lorem ipsum</p>
+            </div>
+
+            <div class="card-body">
+                <div class="img-container">
+                    <img src="https://media.istockphoto.com/id/155419717/photo/peacock-feather.jpg?s=612x612&w=0&k=20&c=SiwR5tlFXqy7w5Pyc4w9ldHG4e9zONKkUyct8_0J2Ao="
+                        alt="">
+                </div>
+                <h1>Heading</h1>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--#endregion  -->
+
+    <!--#region Footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>We are dedicated to providing the best services and experiences for our users. Thank you for choosing
+                    us.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: support@gmail.com</p>
+                <p>Phone: +1 111 111 1111</p>
+                <p>Address: 111 Main Street, Bothell, WA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FluffyFriends. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--#endregion  -->
+
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

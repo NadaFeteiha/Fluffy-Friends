@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sign-up-container">
+        <div class="card center-content" style="width: 50%;">
+            <h2>Sign Up</h2>
+            <div class="center-content">
+                <button class="btn-border">
+                    <img src="../assets/google.png" alt="Google" class="icon">
+                </button>
+                <button class="btn-border">
+                    <img src="../assets/facebook.png" alt="Facebook" class="icon">
+                </button>
+            </div>
+
+            <p>- OR -</p>
+            <form class="form">
+
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Username" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="dob" placeholder="Date of Birth" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-home"></i>
+                    <input type="text" name="address" placeholder="Address" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="end-content">
+                    <button type="submit" class="btn-fill">Sign Up</button>
+                </div>
+                <div class="center-content">
+                    <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
